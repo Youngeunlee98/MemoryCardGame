@@ -1,1 +1,31 @@
-hello world
+<html>
+    <h1 class="main-title">This is title</h1>
+    <h1>this is hello</h1>
+
+    <p class="subtitle">abcdefg</p>
+    <div>qwertyu</div>
+</html>
+
+<style>
+    .main-title {
+        color: blue;
+    }
+
+    .subtitle{
+        color: red;
+    }
+</style>
+
+<script>
+    const mainTitle = document.querySelector(".main-title");
+    //const mainTitle = document.getElememtByClassName("main-title")[0];
+    //getElememtByClassName는 뒤에 [0] 처럼 순번적어주기
+    console.log(mainTitle);
+
+    function sayHello(){
+        alert("hello");
+    }
+
+    mainTitle.addEventListener("click", sayHello);
+
+</script>
